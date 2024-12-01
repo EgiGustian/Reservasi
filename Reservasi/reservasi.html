@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Service Booking
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="d-flex align-items-center">
+            <img alt="User profile picture" height="40"
+                src="https://storage.googleapis.com/a1aa/image/eozlV4Kb9oWuMS9NgPwB1FG1W65vX06RKBRXdvZSYNWNTM7JA.jpg"
+                width="40" />
+            <div class="ms-2">
+                <div>
+                    Hello, Fauzi Yazid!
+                </div>
+                <div class="text-muted">
+                    Selamat Datang
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-search">
+            </i>
+            <input placeholder="Search" type="text" />
+        </div>
+    </div>
+    <div class="nav-tabs">
+        <a class="nav-link active" href="reservasi.html">
+            Booking Service
+        </a>
+        <a class="nav-link" href="biaya.html">
+            Estimasi Biaya
+        </a>
+        <a class="nav-link" href="garansi.html">
+            Garansi Service
+        </a>
+    </div>
+    <!-- end header -->
+
+    <div class="form-container">
+        <h5>
+            Pilih Tanggal untuk melakukan Service Booking
+        </h5>
+        <p>
+            Lengkapi formulir dibawah ini untuk melakukan service booking
+        </p>
+        <form>
+            <label class="form-label" for="tanggalService">
+                *Tanggal Service
+            </label>
+            <input class="form-control" id="tanggalService" type="date" />
+
+            <label class="form-label" for="jamService">
+                *Jam Service
+            </label>
+            <input class="form-control" type="time" id="jamService">
+            <label class="form-label" for="namaLengkap">
+                *Nama Lengkap
+            </label>
+            <input class="form-control" id="namaLengkap" type="text"/>
+            <label class="form-label" for="nomorHandphone">
+                *Nomor Handphone
+            </label>
+            <input class="form-control" id="nomorHandphone" type="text" />
+            <label class="form-label" for="namaSTNK">
+                *Atas Nama Pada STNK
+            </label>
+            <input class="form-control" id="namaSTNK" type="text" />
+            <label class="form-label" for="modelKendaraan">
+                *Model Kendaraan
+            </label>
+            <select class="form-control" aria-label="Default select example" id="modelKendaraan">
+                <option selected> -- Pilih Model Kendaraan -- </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            <label class="form-label" for="layananService">
+                *Layanan Service
+            </label>
+            <select class="form-control" aria-label="Default select example" id="layananService">
+                <option selected> -- Pilih Layanan Service -- </option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            <label class="form-label" for="keluhan">
+                *Keluhan
+            </label>
+            <textarea class="form-control" id="keluhan" rows="3"></textarea>
+            <p class="text-muted">
+                * Form wajib diisi
+            </p>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-dark" type="button">
+                    Batal
+                </button>
+                <button class="btn btn-primary" type="submit">
+                    Kirim
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <a class="nav-link" href="#">
+            <i class="fas fa-home">
+            </i>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="fas fa-comments">
+            </i>
+        </a>
+        <a class="nav-link active" href="#">
+            <i class="fas fa-wrench">
+            </i>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="fas fa-bell">
+            </i>
+        </a>
+        <a class="nav-link" href="#">
+            <i class="fas fa-user">
+            </i>
+        </a>
+    </div>
+    <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
